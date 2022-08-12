@@ -9,15 +9,25 @@ public class Task4 {
         Scanner in = new Scanner(System.in);
         System.out.print("write the number of the hour hand: ");
         int hours = in.nextInt();
+ 	if (hours > 12) {
+            System.out.println("please enter value in 12 hour format)");
+           in.next();
+    }
         System.out.print("write the number of the minute hand: ");
         int minutes = in.nextInt();
+	if (minutes > 60) {
+            System.out.println("there are less than 60 minutes in an hour, please enter another value)");
+            in.next();
+    }
         in.close();
         
         inAngle(hours, minutes);
     }
     
     public static void inAngle(int hh, int mm) { 
-  int angle = (hh + (mm / 60)) * 30 - mm * 6;       
+    var angle = (hh * 30 + mm * 0.5) - (mm * 6);
+    double maxAngle = Math.abs(360 - angle);
+        
   System.out.println("angle between arrows " + angle + "°");
     }
     
