@@ -1,6 +1,13 @@
 import java.util.Scanner;
 
 public class BaseConverter {
+
+//    Напишите класс BaseConverter для конвертации из градусов по Цельсию в
+//    Кельвины, Фаренгейты, и так далее. У метода должен быть метод convert, который
+//    и делает конвертацию.
+//    При запуске кода должна быть возможность ввести градусы Цельсия и выбора
+//    конвертации в Кельвины или Фаренгейты.
+
     public static void main(String args[]) {
         Scanner in = new Scanner(System.in);
         
