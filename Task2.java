@@ -1,7 +1,10 @@
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Test1 {
+public class Task2 {
+
+//    Написать программу, которая должна найти и вывести
+//    повторяющийся символ в слове «Hello»
 
     public static void main(String[] args) {
         String text = "Hello";
