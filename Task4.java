@@ -17,8 +17,8 @@ public class Task4 {
     }
     
     public static void inAngle(int hh, int mm) { 
-  int angle = (360-((hh + mm / 60) * 30 - 6 * mm));       
-  System.out.println("angle between arrows" + angle);
+  int angle = (hh + (mm / 60)) * 30 - mm * 6;       
+  System.out.println("angle between arrows " + angle + "°");
     }
     
 }
